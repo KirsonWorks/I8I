@@ -1,0 +1,11 @@
+[gd_resource type="ShaderMaterial" load_steps=2 format=2]
+
+[ext_resource path="res://script/shader/screen_post_fx.shader" type="Shader" id=1]
+
+[resource]
+shader = ExtResource( 1 )
+shader_param/fade_type = 3
+shader_param/color = Color( 0.00392157, 0.156863, 0.141176, 1 )
+shader_param/blur = null
+shader_param/grayscale = null
+shader_param/fade_intensity = 0.0

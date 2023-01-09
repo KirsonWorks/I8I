@@ -1,0 +1,55 @@
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://scene/stage_base.tscn" type="PackedScene" id=1]
+[ext_resource path="res://scene/actor/ball.tscn" type="PackedScene" id=2]
+[ext_resource path="res://texture/table/table-006.png" type="Texture" id=3]
+[ext_resource path="res://scene/actor/hole.tscn" type="PackedScene" id=4]
+[ext_resource path="res://phymat/table.tres" type="PhysicsMaterial" id=5]
+
+[node name="stage_07" instance=ExtResource( 1 )]
+collision_layer = 2
+collision_mask = 0
+physics_material_override = ExtResource( 5 )
+
+[node name="texture" type="Sprite" parent="." index="0"]
+position = Vector2( 0, 11 )
+texture = ExtResource( 3 )
+centered = false
+
+[node name="collider" parent="." index="1"]
+position = Vector2( 64, 76 )
+polygon = PoolVector2Array( -25, -30, -2, -7, 2, -7, 25, -30, 43, -30, 48, -35, 57, -35, 57, -26, 52, -21, 52, 25, 57, 30, 57, 38, 48, 38, 43, 34, 25, 34, 2, 11, -2, 11, -25, 34, -43, 34, -48, 38, -57, 38, -57, 30, -52, 24, -52, -21, -57, -26, -57, -35, -48, -35, -43, -30 )
+
+[node name="ball" parent="balls" index="0"]
+position = Vector2( 73, 79 )
+is_cue_ball = true
+
+[node name="ball2" parent="balls" index="1" instance=ExtResource( 2 )]
+position = Vector2( 55, 75 )
+
+[node name="ball3" parent="balls" index="2" instance=ExtResource( 2 )]
+position = Vector2( 48, 68 )
+
+[node name="ball4" parent="balls" index="3" instance=ExtResource( 2 )]
+position = Vector2( 42, 61 )
+
+[node name="ball5" parent="balls" index="4" instance=ExtResource( 2 )]
+position = Vector2( 55, 85 )
+
+[node name="ball6" parent="balls" index="5" instance=ExtResource( 2 )]
+position = Vector2( 48, 92 )
+
+[node name="ball7" parent="balls" index="6" instance=ExtResource( 2 )]
+position = Vector2( 41, 98 )
+
+[node name="hole" parent="holes" index="0" instance=ExtResource( 4 )]
+position = Vector2( 11, 45 )
+
+[node name="hole2" parent="holes" index="1" instance=ExtResource( 4 )]
+position = Vector2( 11, 111 )
+
+[node name="hole4" parent="holes" index="2" instance=ExtResource( 4 )]
+position = Vector2( 117, 111 )
+
+[node name="hole5" parent="holes" index="3" instance=ExtResource( 4 )]
+position = Vector2( 117, 45 )

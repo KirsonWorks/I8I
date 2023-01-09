@@ -1,0 +1,872 @@
+[gd_scene load_steps=133 format=2]
+
+[ext_resource path="res://scene/fx/post_effect.tscn" type="PackedScene" id=1]
+[ext_resource path="res://font/712.tres" type="DynamicFont" id=2]
+[ext_resource path="res://script/ui/inc_counter.gd" type="Script" id=3]
+[ext_resource path="res://script/power_carousel.gd" type="Script" id=4]
+[ext_resource path="res://texture/border.png" type="Texture" id=5]
+[ext_resource path="res://script/game.gd" type="Script" id=6]
+[ext_resource path="res://texture/color-a.png" type="Texture" id=7]
+[ext_resource path="res://texture/cup-d.png" type="Texture" id=8]
+[ext_resource path="res://texture/ball-a.png" type="Texture" id=9]
+[ext_resource path="res://texture/corner.png" type="Texture" id=10]
+[ext_resource path="res://texture/arrow-a.png" type="Texture" id=11]
+[ext_resource path="res://texture/border-half.png" type="Texture" id=12]
+[ext_resource path="res://texture/winner/winner-003.png" type="Texture" id=13]
+[ext_resource path="res://texture/winner/winner-014.png" type="Texture" id=14]
+[ext_resource path="res://texture/winner/winner-018.png" type="Texture" id=15]
+[ext_resource path="res://texture/winner/winner-019.png" type="Texture" id=16]
+[ext_resource path="res://texture/winner/winner-012.png" type="Texture" id=17]
+[ext_resource path="res://texture/winner/winner-020.png" type="Texture" id=18]
+[ext_resource path="res://texture/winner/winner-010.png" type="Texture" id=19]
+[ext_resource path="res://texture/winner/winner-005.png" type="Texture" id=20]
+[ext_resource path="res://texture/winner/winner-008.png" type="Texture" id=21]
+[ext_resource path="res://texture/winner/winner-011.png" type="Texture" id=22]
+[ext_resource path="res://texture/winner/winner-015.png" type="Texture" id=23]
+[ext_resource path="res://texture/winner/winner-007.png" type="Texture" id=24]
+[ext_resource path="res://texture/winner/winner-016.png" type="Texture" id=25]
+[ext_resource path="res://texture/winner/winner-017.png" type="Texture" id=26]
+[ext_resource path="res://texture/winner/winner-006.png" type="Texture" id=27]
+[ext_resource path="res://texture/winner/winner-021.png" type="Texture" id=28]
+[ext_resource path="res://texture/winner/winner-004.png" type="Texture" id=29]
+[ext_resource path="res://texture/winner/winner-009.png" type="Texture" id=30]
+[ext_resource path="res://texture/winner/winner-022.png" type="Texture" id=31]
+[ext_resource path="res://texture/winner/winner-013.png" type="Texture" id=32]
+[ext_resource path="res://texture/winner/winner-002.png" type="Texture" id=33]
+[ext_resource path="res://texture/winner/winner-060.png" type="Texture" id=34]
+[ext_resource path="res://texture/winner/winner-061.png" type="Texture" id=35]
+[ext_resource path="res://texture/winner/winner-058.png" type="Texture" id=36]
+[ext_resource path="res://texture/winner/winner-059.png" type="Texture" id=37]
+[ext_resource path="res://texture/winner/winner-064.png" type="Texture" id=38]
+[ext_resource path="res://texture/winner/winner-062.png" type="Texture" id=39]
+[ext_resource path="res://texture/winner/winner-063.png" type="Texture" id=40]
+[ext_resource path="res://texture/winner/winner-043.png" type="Texture" id=41]
+[ext_resource path="res://texture/winner/winner-029.png" type="Texture" id=42]
+[ext_resource path="res://texture/winner/winner-046.png" type="Texture" id=43]
+[ext_resource path="res://texture/winner/winner-048.png" type="Texture" id=44]
+[ext_resource path="res://texture/winner/winner-049.png" type="Texture" id=45]
+[ext_resource path="res://texture/winner/winner-050.png" type="Texture" id=46]
+[ext_resource path="res://texture/winner/winner-023.png" type="Texture" id=47]
+[ext_resource path="res://texture/winner/winner-037.png" type="Texture" id=48]
+[ext_resource path="res://texture/winner/winner-051.png" type="Texture" id=49]
+[ext_resource path="res://texture/winner/winner-053.png" type="Texture" id=50]
+[ext_resource path="res://texture/winner/winner-054.png" type="Texture" id=51]
+[ext_resource path="res://texture/winner/winner-055.png" type="Texture" id=52]
+[ext_resource path="res://texture/winner/winner-001.png" type="Texture" id=53]
+[ext_resource path="res://texture/winner/winner-056.png" type="Texture" id=54]
+[ext_resource path="res://texture/winner/winner-044.png" type="Texture" id=55]
+[ext_resource path="res://texture/winner/winner-033.png" type="Texture" id=56]
+[ext_resource path="res://texture/winner/winner-025.png" type="Texture" id=57]
+[ext_resource path="res://texture/winner/winner-052.png" type="Texture" id=58]
+[ext_resource path="res://texture/winner/winner-057.png" type="Texture" id=59]
+[ext_resource path="res://texture/winner/winner-034.png" type="Texture" id=60]
+[ext_resource path="res://texture/winner/winner-039.png" type="Texture" id=61]
+[ext_resource path="res://texture/winner/winner-041.png" type="Texture" id=62]
+[ext_resource path="res://texture/winner/winner-042.png" type="Texture" id=63]
+[ext_resource path="res://texture/winner/winner-026.png" type="Texture" id=64]
+[ext_resource path="res://texture/winner/winner-032.png" type="Texture" id=65]
+[ext_resource path="res://texture/winner/winner-038.png" type="Texture" id=66]
+[ext_resource path="res://texture/winner/winner-030.png" type="Texture" id=67]
+[ext_resource path="res://texture/winner/winner-031.png" type="Texture" id=68]
+[ext_resource path="res://texture/winner/winner-035.png" type="Texture" id=69]
+[ext_resource path="res://texture/winner/winner-027.png" type="Texture" id=70]
+[ext_resource path="res://texture/winner/winner-036.png" type="Texture" id=71]
+[ext_resource path="res://texture/winner/winner-040.png" type="Texture" id=72]
+[ext_resource path="res://texture/winner/winner-045.png" type="Texture" id=73]
+[ext_resource path="res://texture/winner/winner-047.png" type="Texture" id=74]
+[ext_resource path="res://texture/winner/winner-024.png" type="Texture" id=75]
+[ext_resource path="res://texture/winner/winner-028.png" type="Texture" id=76]
+[ext_resource path="res://sound/win.wav" type="AudioStream" id=77]
+[ext_resource path="res://texture/loser/loser-011.png" type="Texture" id=78]
+[ext_resource path="res://texture/loser/loser-015.png" type="Texture" id=79]
+[ext_resource path="res://texture/loser/loser-010.png" type="Texture" id=80]
+[ext_resource path="res://texture/loser/loser-019.png" type="Texture" id=81]
+[ext_resource path="res://texture/loser/loser-023.png" type="Texture" id=82]
+[ext_resource path="res://texture/loser/loser-006.png" type="Texture" id=83]
+[ext_resource path="res://texture/loser/loser-012.png" type="Texture" id=84]
+[ext_resource path="res://texture/loser/loser-024.png" type="Texture" id=85]
+[ext_resource path="res://texture/loser/loser-026.png" type="Texture" id=86]
+[ext_resource path="res://texture/loser/loser-027.png" type="Texture" id=87]
+[ext_resource path="res://texture/loser/loser-002.png" type="Texture" id=88]
+[ext_resource path="res://texture/loser/loser-016.png" type="Texture" id=89]
+[ext_resource path="res://texture/loser/loser-005.png" type="Texture" id=90]
+[ext_resource path="res://texture/loser/loser-020.png" type="Texture" id=91]
+[ext_resource path="res://texture/loser/loser-022.png" type="Texture" id=92]
+[ext_resource path="res://texture/loser/loser-018.png" type="Texture" id=93]
+[ext_resource path="res://texture/loser/loser-001.png" type="Texture" id=94]
+[ext_resource path="res://texture/loser/loser-007.png" type="Texture" id=95]
+[ext_resource path="res://texture/loser/loser-014.png" type="Texture" id=96]
+[ext_resource path="res://texture/loser/loser-003.png" type="Texture" id=97]
+[ext_resource path="res://texture/loser/loser-017.png" type="Texture" id=98]
+[ext_resource path="res://texture/loser/loser-021.png" type="Texture" id=99]
+[ext_resource path="res://texture/loser/loser-025.png" type="Texture" id=100]
+[ext_resource path="res://texture/loser/loser-004.png" type="Texture" id=101]
+[ext_resource path="res://texture/loser/loser-008.png" type="Texture" id=102]
+[ext_resource path="res://texture/loser/loser-009.png" type="Texture" id=103]
+[ext_resource path="res://texture/loser/loser-013.png" type="Texture" id=104]
+[ext_resource path="res://texture/loser/loser-040.png" type="Texture" id=105]
+[ext_resource path="res://texture/loser/loser-028.png" type="Texture" id=106]
+[ext_resource path="res://texture/loser/loser-038.png" type="Texture" id=107]
+[ext_resource path="res://texture/loser/loser-035.png" type="Texture" id=108]
+[ext_resource path="res://texture/loser/loser-036.png" type="Texture" id=109]
+[ext_resource path="res://texture/loser/loser-030.png" type="Texture" id=110]
+[ext_resource path="res://texture/loser/loser-034.png" type="Texture" id=111]
+[ext_resource path="res://texture/loser/loser-031.png" type="Texture" id=112]
+[ext_resource path="res://texture/loser/loser-033.png" type="Texture" id=113]
+[ext_resource path="res://texture/loser/loser-029.png" type="Texture" id=114]
+[ext_resource path="res://texture/loser/loser-032.png" type="Texture" id=115]
+[ext_resource path="res://texture/loser/loser-037.png" type="Texture" id=116]
+[ext_resource path="res://texture/loser/loser-039.png" type="Texture" id=117]
+[ext_resource path="res://sound/wood-break.wav" type="AudioStream" id=118]
+[ext_resource path="res://texture/ui/esc.png" type="Texture" id=119]
+[ext_resource path="res://texture/ui/enter.png" type="Texture" id=120]
+[ext_resource path="res://texture/surprised.png" type="Texture" id=121]
+[ext_resource path="res://texture/background/pattern-01.png" type="Texture" id=122]
+[ext_resource path="res://texture/cup.png" type="Texture" id=123]
+[ext_resource path="res://sound/wow.wav" type="AudioStream" id=124]
+
+[sub_resource type="Curve" id=2]
+min_value = 1.0
+max_value = 2.0
+_data = [ Vector2( 0, 1.50767 ), 0.0, 0.0, 0, 0, Vector2( 1, 1 ), 0.0, 0.0, 0, 0 ]
+
+[sub_resource type="Animation" id=3]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/path = NodePath("texture:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ ExtResource( 53 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath(".:visible")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 2,
+"values": [ false ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("state:text")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ "STAGE COMPLETED" ]
+}
+
+[sub_resource type="Animation" id=5]
+resource_name = "loser"
+length = 4.0
+tracks/0/type = "value"
+tracks/0/path = NodePath("texture:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1, 1.1, 1.2, 1.3, 1.4, 1.5, 1.6, 1.7, 1.8, 1.9, 2, 2.1, 2.2, 2.3, 2.4, 2.5, 2.6, 2.7, 2.8, 2.9, 3, 3.1, 3.2, 3.3, 3.4, 3.5, 3.6, 3.7, 3.8, 3.9 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1 ),
+"update": 1,
+"values": [ ExtResource( 94 ), ExtResource( 88 ), ExtResource( 97 ), ExtResource( 101 ), ExtResource( 90 ), ExtResource( 83 ), ExtResource( 95 ), ExtResource( 102 ), ExtResource( 103 ), ExtResource( 80 ), ExtResource( 78 ), ExtResource( 84 ), ExtResource( 104 ), ExtResource( 96 ), ExtResource( 79 ), ExtResource( 89 ), ExtResource( 98 ), ExtResource( 93 ), ExtResource( 81 ), ExtResource( 91 ), ExtResource( 99 ), ExtResource( 92 ), ExtResource( 82 ), ExtResource( 85 ), ExtResource( 100 ), ExtResource( 86 ), ExtResource( 87 ), ExtResource( 106 ), ExtResource( 114 ), ExtResource( 110 ), ExtResource( 112 ), ExtResource( 115 ), ExtResource( 113 ), ExtResource( 111 ), ExtResource( 108 ), ExtResource( 109 ), ExtResource( 116 ), ExtResource( 107 ), ExtResource( 117 ), ExtResource( 105 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("state:text")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 2,
+"values": [ "GAME OVER" ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("state:visible")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0, 2.1, 2.3, 2.5, 2.7, 2.9 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1 ),
+"update": 2,
+"values": [ false, true, false, true, false, true ]
+}
+tracks/3/type = "value"
+tracks/3/path = NodePath("sound:stream")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 2,
+"values": [ ExtResource( 118 ) ]
+}
+tracks/4/type = "value"
+tracks/4/path = NodePath("sound:playing")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/keys = {
+"times": PoolRealArray( 0, 2.1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 2,
+"values": [ false, true ]
+}
+tracks/5/type = "value"
+tracks/5/path = NodePath(".:visible")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 2,
+"values": [ true ]
+}
+tracks/6/type = "value"
+tracks/6/path = NodePath("img_esc:visible")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/keys = {
+"times": PoolRealArray( 0, 2.9 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 2,
+"values": [ false, true ]
+}
+tracks/7/type = "value"
+tracks/7/path = NodePath("lbl_menu:visible")
+tracks/7/interp = 1
+tracks/7/loop_wrap = true
+tracks/7/imported = false
+tracks/7/enabled = true
+tracks/7/keys = {
+"times": PoolRealArray( 0, 2.9 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 2,
+"values": [ false, true ]
+}
+tracks/8/type = "value"
+tracks/8/path = NodePath("img_enter:visible")
+tracks/8/interp = 1
+tracks/8/loop_wrap = true
+tracks/8/imported = false
+tracks/8/enabled = true
+tracks/8/keys = {
+"times": PoolRealArray( 0, 2.9 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 1,
+"values": [ false, true ]
+}
+tracks/9/type = "value"
+tracks/9/path = NodePath("lbl_func:visible")
+tracks/9/interp = 1
+tracks/9/loop_wrap = true
+tracks/9/imported = false
+tracks/9/enabled = true
+tracks/9/keys = {
+"times": PoolRealArray( 0, 2.9 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 1,
+"values": [ false, true ]
+}
+tracks/10/type = "value"
+tracks/10/path = NodePath("lbl_func:text")
+tracks/10/interp = 1
+tracks/10/loop_wrap = true
+tracks/10/imported = false
+tracks/10/enabled = true
+tracks/10/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ "retry" ]
+}
+
+[sub_resource type="Animation" id=4]
+resource_name = "winner"
+length = 4.0
+step = 0.06
+tracks/0/type = "value"
+tracks/0/path = NodePath("texture:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.06, 0.12, 0.18, 0.24, 0.3, 0.36, 0.42, 0.48, 0.54, 0.6, 0.66, 0.72, 0.78, 0.84, 0.9, 0.96, 1.02, 1.08, 1.14, 1.2, 1.26, 1.32, 1.38, 1.44, 1.5, 1.56, 1.62, 1.68, 1.74, 1.8, 1.86, 1.92, 1.98, 2.04, 2.1, 2.16, 2.22, 2.28, 2.34, 2.4, 2.46, 2.52, 2.58, 2.64, 2.7, 2.76, 2.82, 2.88, 2.94, 3, 3.06, 3.12, 3.18, 3.24, 3.3, 3.36, 3.42, 3.48, 3.54, 3.6, 3.66, 3.72, 3.78 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1 ),
+"update": 1,
+"values": [ ExtResource( 53 ), ExtResource( 33 ), ExtResource( 13 ), ExtResource( 29 ), ExtResource( 20 ), ExtResource( 27 ), ExtResource( 24 ), ExtResource( 21 ), ExtResource( 30 ), ExtResource( 19 ), ExtResource( 22 ), ExtResource( 17 ), ExtResource( 32 ), ExtResource( 14 ), ExtResource( 23 ), ExtResource( 25 ), ExtResource( 26 ), ExtResource( 15 ), ExtResource( 16 ), ExtResource( 18 ), ExtResource( 28 ), ExtResource( 31 ), ExtResource( 47 ), ExtResource( 75 ), ExtResource( 57 ), ExtResource( 64 ), ExtResource( 70 ), ExtResource( 76 ), ExtResource( 42 ), ExtResource( 67 ), ExtResource( 68 ), ExtResource( 65 ), ExtResource( 56 ), ExtResource( 60 ), ExtResource( 69 ), ExtResource( 71 ), ExtResource( 48 ), ExtResource( 66 ), ExtResource( 61 ), ExtResource( 72 ), ExtResource( 62 ), ExtResource( 63 ), ExtResource( 41 ), ExtResource( 55 ), ExtResource( 73 ), ExtResource( 43 ), ExtResource( 74 ), ExtResource( 44 ), ExtResource( 45 ), ExtResource( 46 ), ExtResource( 49 ), ExtResource( 58 ), ExtResource( 50 ), ExtResource( 51 ), ExtResource( 52 ), ExtResource( 54 ), ExtResource( 59 ), ExtResource( 36 ), ExtResource( 37 ), ExtResource( 34 ), ExtResource( 35 ), ExtResource( 39 ), ExtResource( 40 ), ExtResource( 38 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("state:text")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 2,
+"values": [ "STAGE COMPLETED" ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("state:visible")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0, 2.22, 2.4, 2.58, 2.76, 2.94 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1 ),
+"update": 2,
+"values": [ false, true, false, true, false, true ]
+}
+tracks/3/type = "value"
+tracks/3/path = NodePath(".:visible")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 2,
+"values": [ true ]
+}
+tracks/4/type = "value"
+tracks/4/path = NodePath("sound:stream")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 2,
+"values": [ ExtResource( 77 ) ]
+}
+tracks/5/type = "value"
+tracks/5/path = NodePath("sound:playing")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/keys = {
+"times": PoolRealArray( -0.06, 1.8 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 2,
+"values": [ false, true ]
+}
+tracks/6/type = "value"
+tracks/6/path = NodePath("img_esc:visible")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/keys = {
+"times": PoolRealArray( 0, 2.94 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 2,
+"values": [ false, true ]
+}
+tracks/7/type = "value"
+tracks/7/path = NodePath("lbl_menu:visible")
+tracks/7/interp = 1
+tracks/7/loop_wrap = true
+tracks/7/imported = false
+tracks/7/enabled = true
+tracks/7/keys = {
+"times": PoolRealArray( 0, 2.94 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 1,
+"values": [ false, true ]
+}
+tracks/8/type = "value"
+tracks/8/path = NodePath("img_enter:visible")
+tracks/8/interp = 1
+tracks/8/loop_wrap = true
+tracks/8/imported = false
+tracks/8/enabled = true
+tracks/8/keys = {
+"times": PoolRealArray( 0, 2.94 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 1,
+"values": [ false, true ]
+}
+tracks/9/type = "value"
+tracks/9/path = NodePath("lbl_func:visible")
+tracks/9/interp = 1
+tracks/9/loop_wrap = true
+tracks/9/imported = false
+tracks/9/enabled = true
+tracks/9/keys = {
+"times": PoolRealArray( 0, 2.94 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 1,
+"values": [ false, true ]
+}
+tracks/10/type = "value"
+tracks/10/path = NodePath("lbl_func:text")
+tracks/10/interp = 1
+tracks/10/loop_wrap = true
+tracks/10/imported = false
+tracks/10/enabled = true
+tracks/10/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ "next" ]
+}
+
+[sub_resource type="Animation" id=6]
+resource_name = "blink"
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:visible")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.2, 0.4, 0.6, 0.8, 1 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1 ),
+"update": 2,
+"values": [ false, true, false, true, false, true ]
+}
+
+[sub_resource type="Animation" id=9]
+resource_name = "won"
+length = 1.2
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ ExtResource( 123 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath(".:visible")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 0.2, 0.4, 0.6, 0.8, 1, 1.2 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1, 1 ),
+"update": 2,
+"values": [ true, false, true, false, true, false, true ]
+}
+
+[sub_resource type="Animation" id=7]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/path = NodePath("img_surprised:visible")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ true ]
+}
+
+[sub_resource type="Animation" id=8]
+resource_name = "show"
+length = 1.4
+tracks/0/type = "value"
+tracks/0/path = NodePath("img_surprised:visible")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 1.4 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 2,
+"values": [ true, false ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("img_surprised:rect_position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 0.4, 1, 1.4 ),
+"transitions": PoolRealArray( 1, 0.329877, 1, 2.37841 ),
+"update": 0,
+"values": [ Vector2( 0, 97 ), Vector2( 0, 12 ), Vector2( 0, 12 ), Vector2( 0, 97 ) ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("sound:playing")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0.1 ),
+"transitions": PoolRealArray( 1 ),
+"update": 2,
+"values": [ true ]
+}
+
+[node name="scene_game" type="Node"]
+script = ExtResource( 6 )
+scene_fade_delay = 0.0
+scene_start_fade_type = 3
+scene_finish_fade_type = 2
+
+[node name="bg" type="CanvasLayer" parent="."]
+layer = -1
+
+[node name="img_bg" type="TextureRect" parent="bg"]
+show_behind_parent = true
+anchor_right = 1.0
+anchor_bottom = 1.0
+texture = ExtResource( 122 )
+stretch_mode = 2
+
+[node name="stage_holder" type="Node2D" parent="."]
+
+[node name="power_carousel" type="Node" parent="."]
+script = ExtResource( 4 )
+
+[node name="aim" type="Line2D" parent="."]
+points = PoolVector2Array( 0, 0, 0, 0 )
+width = 2.0
+width_curve = SubResource( 2 )
+default_color = Color( 0.988235, 0.870588, 0.917647, 1 )
+joint_mode = 2
+begin_cap_mode = 2
+end_cap_mode = 2
+
+[node name="ui" type="CanvasLayer" parent="."]
+
+[node name="cutscene" type="Control" parent="ui"]
+visible = false
+anchor_right = 1.0
+anchor_bottom = 1.0
+
+[node name="anim" type="AnimationPlayer" parent="ui/cutscene"]
+anims/RESET = SubResource( 3 )
+anims/loser = SubResource( 5 )
+anims/winner = SubResource( 4 )
+
+[node name="cr" type="ColorRect" parent="ui/cutscene"]
+margin_top = 1.0
+margin_right = 128.0
+margin_bottom = 28.0
+color = Color( 0.00392157, 0.156863, 0.141176, 1 )
+
+[node name="cr2" type="ColorRect" parent="ui/cutscene"]
+margin_top = 100.0
+margin_right = 128.0
+margin_bottom = 128.0
+color = Color( 0.00392157, 0.156863, 0.141176, 1 )
+
+[node name="state" type="Label" parent="ui/cutscene"]
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+margin_top = 36.0
+margin_bottom = 48.0
+custom_colors/font_color_shadow = Color( 0.14902, 0.34902, 0.207843, 1 )
+custom_fonts/font = ExtResource( 2 )
+text = "STAGE COMPLETED"
+align = 1
+
+[node name="texture" type="TextureRect" parent="ui/cutscene"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -64.0
+margin_top = -36.0
+margin_right = 64.0
+margin_bottom = 36.0
+texture = ExtResource( 53 )
+
+[node name="sound" type="AudioStreamPlayer" parent="ui/cutscene"]
+stream = ExtResource( 77 )
+
+[node name="img_esc" type="TextureRect" parent="ui/cutscene"]
+anchor_top = 1.0
+anchor_bottom = 1.0
+margin_left = -2.0
+margin_top = -24.0
+margin_right = 30.0
+margin_bottom = 8.0
+texture = ExtResource( 119 )
+
+[node name="lbl_menu" type="Label" parent="ui/cutscene"]
+anchor_top = 1.0
+anchor_bottom = 1.0
+margin_left = 26.0
+margin_top = -16.0
+margin_right = 58.0
+margin_bottom = -2.0
+custom_colors/font_color = Color( 0.988235, 0.870588, 0.917647, 1 )
+custom_colors/font_color_shadow = Color( 0.741176, 0.635294, 0.0470588, 1 )
+custom_fonts/font = ExtResource( 2 )
+text = "menu"
+
+[node name="img_enter" type="TextureRect" parent="ui/cutscene"]
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = -72.0
+margin_top = -24.0
+margin_right = -40.0
+margin_bottom = 8.0
+texture = ExtResource( 120 )
+
+[node name="lbl_func" type="Label" parent="ui/cutscene"]
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = -44.0
+margin_top = -16.0
+margin_right = -4.0
+margin_bottom = -2.0
+custom_colors/font_color = Color( 0.988235, 0.870588, 0.917647, 1 )
+custom_colors/font_color_shadow = Color( 0.741176, 0.635294, 0.0470588, 1 )
+custom_fonts/font = ExtResource( 2 )
+text = "retry"
+
+[node name="screen" type="Control" parent="ui"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="hstack_header" type="VBoxContainer" parent="ui/screen"]
+anchor_right = 1.0
+margin_bottom = 29.0
+custom_constants/separation = 0
+
+[node name="img_header" type="TextureRect" parent="ui/screen/hstack_header"]
+margin_right = 128.0
+margin_bottom = 13.0
+size_flags_horizontal = 11
+size_flags_vertical = 9
+texture = ExtResource( 7 )
+stretch_mode = 2
+
+[node name="label_score" type="Label" parent="ui/screen/hstack_header/img_header"]
+anchor_left = 1.0
+anchor_right = 1.0
+margin_left = -111.0
+margin_right = -71.0
+margin_bottom = 13.0
+custom_colors/font_color = Color( 0.988235, 0.870588, 0.917647, 1 )
+custom_colors/font_color_shadow = Color( 0.14902, 0.34902, 0.207843, 1 )
+custom_fonts/font = ExtResource( 2 )
+text = "00000"
+align = 2
+valign = 1
+script = ExtResource( 3 )
+duration = 2.0
+format = "%05d"
+
+[node name="label_hiscore" type="Label" parent="ui/screen/hstack_header/img_header"]
+anchor_left = 1.0
+anchor_right = 1.0
+margin_left = -57.0
+margin_right = -17.0
+margin_bottom = 12.0
+custom_colors/font_color = Color( 0.741176, 0.635294, 0.0470588, 1 )
+custom_colors/font_color_shadow = Color( 0.14902, 0.34902, 0.207843, 1 )
+custom_fonts/font = ExtResource( 2 )
+text = "00000"
+align = 2
+valign = 1
+script = ExtResource( 3 )
+duration = 2.0
+format = "%05d"
+
+[node name="anim" type="AnimationPlayer" parent="ui/screen/hstack_header/img_header/label_hiscore"]
+anims/blink = SubResource( 6 )
+
+[node name="img_cup" type="TextureRect" parent="ui/screen/hstack_header/img_header"]
+margin_left = 56.0
+margin_top = -1.0
+margin_right = 72.0
+margin_bottom = 15.0
+texture = ExtResource( 8 )
+
+[node name="anim" type="AnimationPlayer" parent="ui/screen/hstack_header/img_header/img_cup"]
+anims/won = SubResource( 9 )
+
+[node name="hstack_panel" type="HBoxContainer" parent="ui/screen/hstack_header"]
+margin_top = 13.0
+margin_right = 128.0
+margin_bottom = 29.0
+size_flags_horizontal = 11
+custom_constants/separation = 0
+
+[node name="img_border_left" type="TextureRect" parent="ui/screen/hstack_header/hstack_panel"]
+margin_right = 29.0
+margin_bottom = 16.0
+rect_min_size = Vector2( 29, 0 )
+texture = ExtResource( 5 )
+stretch_mode = 2
+
+[node name="img_corner_left" type="TextureRect" parent="ui/screen/hstack_header/hstack_panel"]
+margin_left = 29.0
+margin_right = 35.0
+margin_bottom = 16.0
+texture = ExtResource( 10 )
+
+[node name="img_panel_center" type="TextureRect" parent="ui/screen/hstack_header/hstack_panel"]
+margin_left = 35.0
+margin_right = 93.0
+margin_bottom = 16.0
+rect_min_size = Vector2( 58, 0 )
+texture = ExtResource( 12 )
+stretch_mode = 2
+
+[node name="container" type="CenterContainer" parent="ui/screen/hstack_header/hstack_panel/img_panel_center"]
+margin_right = 58.0
+margin_bottom = 8.0
+
+[node name="indicators" type="HBoxContainer" parent="ui/screen/hstack_header/hstack_panel/img_panel_center/container"]
+margin_right = 58.0
+margin_bottom = 8.0
+custom_constants/separation = -3
+
+[node name="img_ball_01" type="TextureRect" parent="ui/screen/hstack_header/hstack_panel/img_panel_center/container/indicators"]
+margin_right = 8.0
+margin_bottom = 8.0
+texture = ExtResource( 9 )
+
+[node name="img_ball_02" type="TextureRect" parent="ui/screen/hstack_header/hstack_panel/img_panel_center/container/indicators"]
+margin_left = 5.0
+margin_right = 13.0
+margin_bottom = 8.0
+texture = ExtResource( 9 )
+
+[node name="img_ball_03" type="TextureRect" parent="ui/screen/hstack_header/hstack_panel/img_panel_center/container/indicators"]
+margin_left = 10.0
+margin_right = 18.0
+margin_bottom = 8.0
+texture = ExtResource( 9 )
+
+[node name="img_power_01" type="TextureRect" parent="ui/screen/hstack_header/hstack_panel/img_panel_center/container/indicators"]
+margin_left = 15.0
+margin_right = 23.0
+margin_bottom = 8.0
+texture = ExtResource( 11 )
+
+[node name="img_power_02" type="TextureRect" parent="ui/screen/hstack_header/hstack_panel/img_panel_center/container/indicators"]
+margin_left = 20.0
+margin_right = 28.0
+margin_bottom = 8.0
+texture = ExtResource( 11 )
+
+[node name="img_power_03" type="TextureRect" parent="ui/screen/hstack_header/hstack_panel/img_panel_center/container/indicators"]
+margin_left = 25.0
+margin_right = 33.0
+margin_bottom = 8.0
+texture = ExtResource( 11 )
+
+[node name="img_power_04" type="TextureRect" parent="ui/screen/hstack_header/hstack_panel/img_panel_center/container/indicators"]
+margin_left = 30.0
+margin_right = 38.0
+margin_bottom = 8.0
+texture = ExtResource( 11 )
+
+[node name="img_power_05" type="TextureRect" parent="ui/screen/hstack_header/hstack_panel/img_panel_center/container/indicators"]
+margin_left = 35.0
+margin_right = 43.0
+margin_bottom = 8.0
+texture = ExtResource( 11 )
+
+[node name="img_power_06" type="TextureRect" parent="ui/screen/hstack_header/hstack_panel/img_panel_center/container/indicators"]
+margin_left = 40.0
+margin_right = 48.0
+margin_bottom = 8.0
+texture = ExtResource( 11 )
+
+[node name="img_power_07" type="TextureRect" parent="ui/screen/hstack_header/hstack_panel/img_panel_center/container/indicators"]
+margin_left = 45.0
+margin_right = 53.0
+margin_bottom = 8.0
+texture = ExtResource( 11 )
+
+[node name="img_power_08" type="TextureRect" parent="ui/screen/hstack_header/hstack_panel/img_panel_center/container/indicators"]
+margin_left = 50.0
+margin_right = 58.0
+margin_bottom = 8.0
+texture = ExtResource( 11 )
+
+[node name="img_corner_right" type="TextureRect" parent="ui/screen/hstack_header/hstack_panel"]
+margin_left = 93.0
+margin_right = 99.0
+margin_bottom = 16.0
+texture = ExtResource( 10 )
+flip_h = true
+
+[node name="img_border_right" type="TextureRect" parent="ui/screen/hstack_header/hstack_panel"]
+margin_left = 99.0
+margin_right = 128.0
+margin_bottom = 16.0
+rect_min_size = Vector2( 29, 0 )
+texture = ExtResource( 5 )
+stretch_mode = 2
+
+[node name="surprised" type="Control" parent="ui"]
+margin_right = 40.0
+margin_bottom = 40.0
+
+[node name="img_surprised" type="TextureRect" parent="ui/surprised"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_top = 97.0
+margin_right = 88.0
+margin_bottom = 185.0
+texture = ExtResource( 121 )
+
+[node name="anim" type="AnimationPlayer" parent="ui/surprised"]
+anims/RESET = SubResource( 7 )
+anims/show = SubResource( 8 )
+
+[node name="sound" type="AudioStreamPlayer" parent="ui/surprised"]
+stream = ExtResource( 124 )
+pitch_scale = 0.85
+
+[node name="post_effect" parent="." instance=ExtResource( 1 )]
+
+[connection signal="changed" from="power_carousel" to="." method="_on_power_carousel_changed"]
